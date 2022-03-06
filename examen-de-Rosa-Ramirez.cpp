@@ -42,7 +42,14 @@ int main()
 			cout << ">> "; cin >> a;
 			cout << "La factorial de "<< a << " es: " << factorial(a) << endl;
 			break;
-	
+			
+			case 2:
+			cout << "---------- Tabla de multiplicar ----------" << endl;
+			cout << "Ingrese el numero del cual desea conocer su tabla: " << endl;
+			cout << ">> "; cin >> a;
+			cout << "\nLa tabla de multiplicar de " << a << " es:" << endl;
+			tabla(a);
+			break;
 	
 	return 0;
 }
