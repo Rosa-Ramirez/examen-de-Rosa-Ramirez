@@ -26,6 +26,22 @@ int main()
 		}
 
 	}
+	if (clave == 123456)
+	{
+		cout << "\nClave correcta, bienvenido" << endl;
+		cout << "\n---------- Menu ----------" << endl;
+		cout << "Ingrese el numero de la accion que desee realizar:" << endl;
+		cout << " 1. Calcular factorial de un numero. \n 2. Tabla de Multiplicar \n 3. Calcular numeros pares y promedio de impares. \n 4. Dia laboral." << endl;
+		cout << ">> "; cin >> accion;
+		
+		switch (accion)
+		{
+			case 1:
+			cout << "---------- Factorial de un numero ----------" << endl;
+			cout << "Ingrese un valor" << endl;
+			cout << ">> "; cin >> a;
+			cout << "La factorial de "<< a << " es: " << factorial(a) << endl;
+			break;
 	
 	
 	return 0;
