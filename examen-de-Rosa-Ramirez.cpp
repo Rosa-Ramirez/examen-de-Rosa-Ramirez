@@ -50,6 +50,29 @@ int main()
 			cout << "\nLa tabla de multiplicar de " << a << " es:" << endl;
 			tabla(a);
 			break;
+			
+			case 3: 
+			cout << "---------- Calcular cantidad de numeros pares y promedio de impares ----------" << endl;
+			for (int i = 1; i <= 10; i ++)
+			{
+				cout << "Numero " << i << ": ";
+				cin >> a;
+				if (a % 2 == 0)
+				{
+				sumapar += a;
+				contador_par++;
+				}
+				else
+				{
+				sumaimpar += a;
+				contador_impar++;
+				}
+			}
+	
+			cout << "\nCantidad de pares: " << contador_par;
+			cout << "\nCantidad de impares: " << contador_impar;
+			cout << "\nPromedio de impares: " << float(sumaimpar) / contador_impar;
+			break;
 	
 	return 0;
 }
