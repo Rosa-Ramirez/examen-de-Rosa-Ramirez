@@ -95,6 +95,31 @@ int main()
 				break;
 				case 7: cout << "No es un dia laboral." << endl;
 				break;
+			}
+			break;
+		}
+	}
+	
+	cout << "\n---------- Gracias por su atencion, vuelva pronto :) ----------";
 	
 	return 0;
+}
+int factorial(int a)
+{
+	if(a == 0){
+		a = 1;
+	}
+	else{
+		a = a * factorial(a-1);
+	}
+	return a;
+}
+
+int tabla(int a)
+{
+	for (int i = 1; i <= 10; i++)
+	{
+		cout << a << " * " << i << " = " << a * i << endl;
+	}
+	return a;
 }
