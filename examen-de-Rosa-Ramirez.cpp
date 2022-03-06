@@ -73,6 +73,28 @@ int main()
 			cout << "\nCantidad de impares: " << contador_impar;
 			cout << "\nPromedio de impares: " << float(sumaimpar) / contador_impar;
 			break;
+			
+			case 4: 
+			cout << "---------- Dia laboral ----------" << endl;
+			cout << "\nDigite el numero de su opcion:" << endl;
+			cout << " 1. Lunes \n 2. Martes \n 3. Miercoles \n 4. Jueves \n 5. Viernes \n 6. Sabado \n 7. Domingo" << endl;
+			cin >> dia;
+			switch(dia)
+			{
+				case 1: cout << "Es un dia laboral." << endl;
+				break;
+				case 2: cout << "Es un dia laboral." << endl;
+				break;
+				case 3: cout << "Es un dia laboral." << endl;
+				break;
+				case 4: cout << "Es un dia laboral." << endl;
+				break;
+				case 5: cout << "Es un dia laboral." << endl;
+				break;
+				case 6: cout << "No es un dia laboral." << endl;
+				break;
+				case 7: cout << "No es un dia laboral." << endl;
+				break;
 	
 	return 0;
 }
